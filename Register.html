@@ -54,10 +54,12 @@
   <input type="text" id="newUsername" placeholder="Username">
   <input type="password" id="newPassword" placeholder="Password">
   <button onclick="registerUser()">Register</button>
-  <div class="message" id="registerMessage"></div>
-</div><br>
-   <a href="https://chandruukt.github.io/bestloanapps/index.html" class="btn">Home</a><br>
+  <div class="message" id="registerMessage">
+     <a href="https://chandruukt.github.io/bestloanapps/index.html" class="btn">Home</a><br>
  <a href="https://chandruukt.github.io/bestloanapps/login.html" class="btn">Login</a>
+  </div>
+</div><br>
+  
 <script>
   function registerUser() {
     const uname = document.getElementById('newUsername').value.trim();
