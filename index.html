@@ -1,158 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Courses</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <style>
-        body {
-            background-color: #f8f9fa;
-            color: #495057;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ExamProjects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Roboto', sans-serif;
+    }
 
-        .course-container {
-            background-color: #ffffff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin-bottom: 20px;
-        }
+    body {
+      background: #E3F2FD;
+      color: #212121;
+      padding: 15px;
+    }
 
-        h3 {
-            color: #007bff;
-           
-        }
+    header {
+      background: linear-gradient(45deg, #0D47A1, #1565C0);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      border-radius: 8px;
+    }
 
- h4 {
-            color:white;
-           
-        }
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+      flex-wrap: wrap;
+    }
 
-        .header-container {
-            background-color: #007bff;
-            padding: 20px 0;
-            text-align: center;
-    color:#fffccc;
-        }
+    .btn {
+      background-color: #00ACC1;
+      color: white;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
 
-        .header-logo {
-            max-width: 150px;
-            max-height: 150px;
-        }
+    .btn:hover {
+      background-color: #00838F;
+    }
 
-        .footer-container {
-            background-color: #007bff;
-            color: #ffffff;
-            padding: 10px 0;
-            text-align: center;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px;
+    }
+
+    .content-section {
+      background-color: #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .content-section h2 {
+      color: #0D47A1;
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    ul {
+      list-style: disc inside;
+      padding-left: 10px;
+      font-size: 0.95em;
+    }
+
+    p {
+      font-size: 0.95em;
+    }
+
+    footer {
+      background-color: #BBDEFB;
+      color: #333;
+      text-align: center;
+      padding: 12px;
+      font-size: 0.9em;
+      border-radius: 6px;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+
+      .btn-group {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
-
 <body>
-    <!-- Header -->
-    <div class="header-container">
-        <img src="https://deltanovaindia.files.wordpress.com/2023/10/deltanova.png" alt="Logo" class="header-logo">
-        <h1>DeltaNova-Online Courses</h1>
-<hr>
-        <h4>Providing Quality Education in Technology</h4>
-<CENTER>
 
-<a href="https://forms.gle/9gGy7DGxVV5HxW6F8"><h4>CLICK HERE FOR COURSE REGISTRATION:</h4></a>
-</CENTER>
+  <header>
+    <h1>ExamProjects</h1>
+  </header>
+
+  <div class="btn-group">
+    <a href="register.html" class="btn">Register</a>
+    <a href="login.html" class="btn">Login</a>
+  </div>
+
+  <div class="grid-container">
+
+    <div class="content-section">
+      <h2>For UG Students</h2>
+      <ul>
+        <li>Student Attendance System</li>
+        <li>Online Quiz App using Flask</li>
+        <li>Library Management System</li>
+        <li>Weather Forecast App</li>
+        <li>Budget Tracker</li>
+        <li>Portfolio Builder</li>
+        <li>QR Code ID Generator</li>
+        <li>Blog Website</li>
+        <li>Notes Sharing App</li>
+        <li>Mini Chat Application</li>
+      </ul>
     </div>
 
-
-   
-
-    <div class="container mt-5">
-        <!-- Python Course -->
-        <div class="course-container">
-            <h3>Python Course</h3>
-            <ul>
-                <li>Learn the versatile language powering tech giants.</li>
-                <li>Explore Python's simplicity and power.</li>
-                <li>Dive into real-world projects to solidify your skills.</li>
-                <li>Online classes, 40-60 hours, pay after placement. <sup>*</sup></li>
-                <li>Elevate your skills, build a portfolio, and step confidently into the world of technology.</li>
-            </ul>
-             <p>Contact: WhatsApp +919894532863 | Email: deltanovaindia@gmail.com</p>
-        </div>
-
-        <!-- Full Stack Development -->
-        <div class="course-container">
-            <h3>Full Stack Development</h3>
-            <ul>
-                <li>Master the entire web development stack.</li>
-                <li>Build dynamic websites with the latest technologies.</li>
-                <li>Practical hands-on sessions for a comprehensive understanding.</li>
-                <li>Online classes, 40-60 hours, pay after placement. <sup>*</sup></li>
-                <li>Elevate your skills, build a portfolio, and step confidently into the world of technology.</li>
-            </ul>
-             <p>Contact: WhatsApp +919894532863 | Email: deltanovaindia@gmail.com</p>
-        </div>
-
-        <!-- ASP.NET MVC WEB-API - SQL Server Course -->
-        <div class="course-container">
-            <h3>ASP.NET MVC WEB-API - SQL Server Course</h3>
-            <ul>
-                <li>Embrace Microsoft's powerful web framework.</li>
-                <li>Database integration with SQL Server for robust applications.</li>
-                <li>Real-world projects to enhance your portfolio.</li>
-                <li>Online classes, 40-60 hours, pay after placement. <sup>*</sup></li>
-                <li>Elevate your skills, build a portfolio, and step confidently into the world of technology.</li>
-            </ul>
-             <p>Contact: WhatsApp +919894532863 | Email: deltanovaindia@gmail.com</p>
-        </div>
-
-        <!-- AI-ML Course -->
-        <div class="course-container">
-            <h3>AI-ML Course</h3>
-            <ul>
-                <li>Unlock the potential of Artificial Intelligence and Machine Learning.</li>
-                <li>Hands-on experience with cutting-edge tools and algorithms.</li>
-                <li>Dive into real-world applications and use cases.</li>
-                <li>Online classes, 40-60 hours, pay after placement. <sup>*</sup></li>
-                <li>Elevate your skills, build a portfolio, and step confidently into the world of technology.</li>
-            </ul>
-            <p>Contact: WhatsApp +919894532863 | Email: deltanovaindia@gmail.com</p>
-        </div>
-
-        <!-- Final Year MCA/BE CSE Project Works -->
-        <div class="course-container">
-            <h3>Final Year MCA/BE CSE Project Works</h3>
-            <ul>
-                <li>Elevate your project with expert guidance.</li>
-                <li>Tailored assistance for your unique project requirements.</li>
-                <li>Showcase your skills in your final year project.</li>
-            </ul>
-            <p>Contact: WhatsApp +919894532863 | Email: deltanovaindia@gmail.com</p>
-        </div>
-
+    <div class="content-section">
+      <h2>For PG Students</h2>
+      <ul>
+        <li>AI Chatbot using NLP</li>
+        <li>Data Analytics Dashboard</li>
+        <li>Secure Messaging via Cryptography</li>
+        <li>Blockchain Voting System</li>
+        <li>ML in Healthcare Diagnosis</li>
+        <li>Virtual Assistant with Voice</li>
+        <li>Cloud File Storage System</li>
+        <li>Remote Lab Portal</li>
+        <li>IoT Smart Parking</li>
+        <li>Project Planner Tool</li>
+      </ul>
     </div>
 
-    <!-- Bootstrap JS and dependencies (jQuery, Popper.js) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
-
-
-    <!-- Footer -->
-    <div class="footer-container">
-        @deltanova, 2024 | <a href="https://deltanovaindia.wordpress.com" target="_blank">deltanovaindia.wordpress.com</a>
+    <div class="content-section">
+      <h2>The Process</h2>
+      <ul>
+        <li>1. Register</li>
+        <li>2. Choose project category</li>
+        <li>3. Select project title</li>
+        <li>4. Payment</li>
+        <li>5. Download your project with:</li>
+        <ul>
+          <li>- Certificate</li>
+          <li>- Source Code</li>
+          <li>- PDF Thesis</li>
+          <li>- Voice Explanation</li>
+        </ul>
+      </ul>
     </div>
 
-    <!-- Bootstrap JS and dependencies (jQuery, Popper.js) -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <div class="content-section">
+      <h2>Contact Us</h2>
+      <p>📱 WhatsApp: +91 98945 32863</p>
+      <p>📧 Email: deltanovaindia@gmail.com</p>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; Copyright - DeltaNova<br>
+    Software Development and Training Company,<br>
+    Mannargudi City<br>
+    Email: deltanovaindia@gmail.com
+  </footer>
 
 </body>
-
 </html>
