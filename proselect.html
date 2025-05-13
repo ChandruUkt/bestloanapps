@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Select Category and Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #f4f6f9;
+    }
+
+    header {
+      background-color: #33691E;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 1.4em;
+    }
+
+    .category-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 15px;
+      padding: 10px;
+    }
+
+    .category-box {
+      min-width: 260px;
+      background-color: #e8f5e9;
+      border-radius: 10px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      flex: 1 1 23%; /* Ensures 4 items in a row */
+    }
+
+    .category-box h3 {
+      color: #2e7d32;
+      margin-bottom: 10px;
+    }
+
+    .project-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .project-list li {
+      margin-bottom: 8px;
+      font-size: 0.95em;
+    }
+
+    .project-list button {
+      margin-top: 5px;
+      padding: 5px 10px;
+      background-color: #388e3c;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 0.9em;
+      cursor: pointer;
+    }
+
+    footer {
+      margin-top: 20px;
+      background-color: #c8e6c9;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.85em;
+      color: #2e7d32;
+    }
+  </style>
+</head>
+<body>
+
+<header>Select Category and Project</header>
+
+<div class="category-container">
+  <!-- Category 1: AI / ML -->
+  <div class="category-box">
+    <h3>AI / ML</h3>
+    <ul class="project-list">
+      <li>Fake News Detection <button onclick="selectProject('AI/ML','Fake News Detection')">Select</button></li>
+      <li>Student Dropout Prediction <button onclick="selectProject('AI/ML','Student Dropout Prediction')">Select</button></li>
+      <li>Facial Emotion Recognition <button onclick="selectProject('AI/ML','Facial Emotion Recognition')">Select</button></li>
+    </ul>
+  </div>
+
+  <!-- Category 2: Cybersecurity -->
+  <div class="category-box">
+    <h3>Cybersecurity</h3>
+    <ul class="project-list">
+      <li>Phishing Website Detector <button onclick="selectProject('Cybersecurity','Phishing Website Detector')">Select</button></li>
+      <li>Secure Chat App <button onclick="selectProject('Cybersecurity','Secure Chat App')">Select</button></li>
+      <li>File Encryption System <button onclick="selectProject('Cybersecurity','File Encryption System')">Select</button></li>
+    </ul>
+  </div>
+
+  <!-- Category 3: Fullstack Dev -->
+  <div class="category-box">
+    <h3>Fullstack Development</h3>
+    <ul class="project-list">
+      <li>Task Management Tool <button onclick="selectProject('Fullstack','Task Management Tool')">Select</button></li>
+      <li>E-Learning Portal <button onclick="selectProject('Fullstack','E-Learning Portal')">Select</button></li>
+      <li>Hotel Booking System <button onclick="selectProject('Fullstack','Hotel Booking System')">Select</button></li>
+    </ul>
+  </div>
+
+  <!-- Category 4: DevOps -->
+  <div class="category-box">
+    <h3>DevOps</h3>
+    <ul class="project-list">
+      <li>CI/CD Pipeline Simulator <button onclick="selectProject('DevOps','CI/CD Pipeline Simulator')">Select</button></li>
+      <li>Dockerized App Deployment <button onclick="selectProject('DevOps','Dockerized App Deployment')">Select</button></li>
+      <li>Monitoring Dashboard <button onclick="selectProject('DevOps','Monitoring Dashboard')">Select</button></li>
+    </ul>
+  </div>
+</div>
+
+<div class="category-container">
+  <!-- Category 5: Web Development -->
+  <div class="category-box">
+    <h3>Web Development</h3>
+    <ul class="project-list">
+      <li>Online Portfolio Builder <button onclick="selectProject('Web Dev','Online Portfolio Builder')">Select</button></li>
+      <li>NGO Donation Website <button onclick="selectProject('Web Dev','NGO Donation Website')">Select</button></li>
+      <li>Student Voting System <button onclick="selectProject('Web Dev','Student Voting System')">Select</button></li>
+    </ul>
+  </div>
+
+  <!-- Category 6: Mobile App Development -->
+  <div class="category-box">
+    <h3>Mobile App Dev</h3>
+    <ul class="project-list">
+      <li>Expense Tracker App <button onclick="selectProject('Mobile App','Expense Tracker App')">Select</button></li>
+      <li>Bus Booking App <button onclick="selectProject('Mobile App','Bus Booking App')">Select</button></li>
+      <li>QR Attendance System <button onclick="selectProject('Mobile App','QR Attendance System')">Select</button></li>
+    </ul>
+  </div>
+
+  <!-- Category 7: Networking -->
+  <div class="category-box">
+    <h3>Networking</h3>
+    <ul class="project-list">
+      <li>Network Topology Visualizer <button onclick="selectProject('Networking','Network Topology Visualizer')">Select</button></li>
+      <li>Chat Over LAN <button onclick="selectProject('Networking','Chat Over LAN')">Select</button></li>
+      <li>Packet Analyzer Tool <button onclick="selectProject('Networking','Packet Analyzer Tool')">Select</button></li>
+    </ul>
+  </div>
+
+  <!-- Category 8: Cloud Computing -->
+  <div class="category-box">
+    <h3>Cloud Computing</h3>
+    <ul class="project-list">
+      <li>Cloud File Backup System <button onclick="selectProject('Cloud','Cloud File Backup System')">Select</button></li>
+      <li>Cloud Resource Monitor <button onclick="selectProject('Cloud','Cloud Resource Monitor')">Select</button></li>
+      <li>Online IDE on Cloud <button onclick="selectProject('Cloud','Online IDE on Cloud')">Select</button></li>
+    </ul>
+  </div>
+</div>
+
+<footer>
+  @copyright DeltaNova | Software Development & Training Company, Mannargudi City<br>
+  📧 deltanovaindia@gmail.com
+</footer>
+
+<script>
+  function selectProject(category, title) {
+    localStorage.setItem("selectedCategory", category);
+    localStorage.setItem("selectedProject", title);
+    alert("You selected: " + title + "\nRedirecting to contact page...");
+    window.location.href = "contact.html"; // Placeholder, design this later
+  }
+</script>
+
+</body>
+</html>
