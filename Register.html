@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Register - ExamProjects</title>
+  <style>
+    body {
+      background-color: #F1F8E9;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .form-box {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      width: 300px;
+    }
+
+    h2 {
+      color: #33691E;
+      text-align: center;
+    }
+
+    input, button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      font-size: 1em;
+    }
+
+    button {
+      background-color: #558B2F;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    .message {
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="form-box">
+  <h2>Register</h2>
+  <input type="text" id="newUsername" placeholder="Username">
+  <input type="password" id="newPassword" placeholder="Password">
+  <button onclick="registerUser()">Register</button>
+  <div class="message" id="registerMessage"></div>
+</div>
+
+<script>
+  function registerUser() {
+    const uname = document.getElementById('newUsername').value.trim();
+    const pword = document.getElementById('newPassword').value.trim();
+    const msg = document.getElementById('registerMessage');
+
+    if (uname === "" || pword === "") {
+      msg.style.color = 'red';
+      msg.textContent = "Both fields are required.";
+      return;
+    }
+
+    let users = JSON.parse(localStorage.getItem("users")) || [];
+
+    const userExists = users.some(u => u.username === uname);
+    if (userExists) {
+      msg.style.color = 'orange';
+      msg.textContent = "Username already exists.";
+    } else {
+      users.push({ username: uname, password: pword });
+      localStorage.setItem("users", JSON.stringify(users));
+      msg.style.color = 'green';
+      msg.textContent = "Registration successful!";
+      console.log("Users stored in localStorage:", users);
+    }
+  }
+</script>
+
+</body>
+</html>
